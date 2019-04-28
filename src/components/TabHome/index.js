@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 
-import ScrollableTabView from 'react-native-scrollable-tab-view'
+import ScrollableTabView, { DefaultTabBar } from 'react-native-scrollable-tab-view';
 
 import Requests from '../Requests';
 import Donations from '../Donations';

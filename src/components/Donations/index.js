@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import { View, Text } from 'react-native';
-
-// import { Container } from './styles';
+import Item from '../Item';
+import Location from '../Location';
+ import { Container } from './styles';
 
 export default class Donations extends Component {
 
@@ -11,8 +12,15 @@ export default class Donations extends Component {
     }
 
   render() {
-    return <View>
-        <Text>Teste</Text>
-    </View>;
+    return (
+      <Container>
+        <Location/>
+        <Item/>
+        <Item/>
+        <Item/>
+        <Item/>
+      </Container>
+
+    );
   }
 }
