@@ -8,7 +8,7 @@ export default class Profile extends Component {
   render() {
     return (
       <View style={{ flex: 1}}>
-        <Header name="Wellington A."/>
+        <Header name="Wellington A." shadow={true}/>
       </View>
       );
   }

@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 export const Header = styled.View`
     display: flex;
     width: 100%;
-    height: 40px;
+    height: 50px;
     background: #FFF;
     flex-direction: row;
     justify-content: space-between;

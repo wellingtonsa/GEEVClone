@@ -8,7 +8,7 @@ export default class Notifications extends Component {
   render() {
     return (
       <View style={{ flex: 1}}>
-        <Header name="Notifications"/>
+        <Header name="Notifications" shadow={true}/>
       </View>
       );
   }

@@ -8,7 +8,7 @@ export default class Create extends Component {
   render() {
     return (
       <View style={{ flex: 1}}>
-        <Header name="New"/>
+        <Header name="New" shadow={true}/>
       </View>
       );
   }

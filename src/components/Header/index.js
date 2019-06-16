@@ -4,9 +4,9 @@ import { View } from 'react-native';
 
 import { Container, Title } from './styles';
 
-const Header = (props) => (
-    <Container>
-        <Title>{props.name}</Title>
+const Header = ({ name, shadow = false }) => (
+    <Container shadow={shadow}>
+        <Title>{name}</Title>
     </Container>
 );
 
