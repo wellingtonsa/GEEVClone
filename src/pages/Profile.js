@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-
+import Header from '../components/Header';
 import { View, Text } from 'react-native';
 
 // import styles from './styles';
 
 export default class Profile extends Component {
   render() {
-    return (<View><Text>Profile</Text></View>);
+    return (
+      <View style={{ flex: 1}}>
+        <Header name="Wellington A."/>
+      </View>
+      );
   }
 }
