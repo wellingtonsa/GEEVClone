@@ -1,11 +1,35 @@
 import React, { Component } from 'react';
-
-import { View, Text } from 'react-native';
+import { ScrollView, FlatList  } from 'react-native';
 import Item from '../Item';
 import Location from '../Location';
- import { Container } from './styles';
+
+import { Container } from './styles';
 
 export default class Donations extends Component {
+
+
+    state ={
+      objects:[
+        {
+          id: 0
+        },
+        {
+          id: 1
+        },
+        {
+          id: 2
+        },
+        {
+          id: 4
+        },
+        {
+          id: 5
+        },
+        {
+          id: 6
+        },
+      ]
+    }
 
     constructor(props){
         super(props);
@@ -15,10 +39,12 @@ export default class Donations extends Component {
     return (
       <Container>
         <Location/>
-        <Item/>
-        <Item/>
-        <Item/>
-        <Item/>
+        <FlatList
+        data={this.state.objects}
+        keyExtractor={object => object.id.toString()}
+        renderItem={() => <Item/>}
+        numColumns={2}
+      /> 
       </Container>
 
     );
